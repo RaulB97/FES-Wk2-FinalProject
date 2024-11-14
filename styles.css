@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    /* used in nav section, header section, main section */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
