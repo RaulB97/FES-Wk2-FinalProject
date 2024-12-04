@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/430de18ab4.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <section id="landing">
@@ -27,6 +28,22 @@
             <a href="#" class="nav__link nav__link--primary">Sign Up</a>
           </div>
           <!-- here will add the menu button for mobile phones -->
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+              <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                  <i class="fa-solid fa-xmark"></i>
+              </button>
+              <ul class="menu__links">
+                  <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()">About</a></li>
+                  <li class="menu__list"><a href="" class="menu__link" onclick="closeMenu()">Blog</a></li>
+                  <li class="menu__list"><a href="" class="menu__link" onclick="closeMenu()">Pricing</a></li>
+                  <li class="menu__list"><a href="" class="menu__link" onclick="closeMenu()">Contact Us</a></li>
+                  <li class="menu__list"><a href="" class="menu__link" onclick="closeMenu()">Login</a></li>
+                  <li class="menu__list"><a href="" class="menu__link nav__link--primary" onclick="closeMenu()">Sign Up</a></li>
+              </ul>
+          </div>
         </div>
       </nav>
       <header>
@@ -430,12 +447,14 @@
       </section>
       <section id="start">
         <div class="container">
-          <div class="start__container">
-            <div class="start__row">
-              <div class="start__text">Developers all over the world are happily using Treact.</div>
-              <div class="start__btns">
-                <button class="start__btn start__orange--btn">Get Started</button>
-                <button class="start__btn">Contact Us</button>
+          <div class="row">
+            <div class="start__container">
+              <div class="start__row">
+                <div class="start__text">Developers all over the world are happily using Treact.</div>
+                <div class="start__btns">
+                  <button class="start__btn start__orange--btn">Get Started</button>
+                  <button class="start__btn">Contact Us</button>
+                </div>
               </div>
             </div>
           </div>
